@@ -141,11 +141,11 @@
                     <p>A tag "br" serve para quebrar linhas de um parágrafo, é usada para textos pequenos, poemas ou informações de endereço no rodapé, no entanto não é aconselhável usar essa estratégia para telas responsivas, pois o que é codificado no HTML é fixo, e quando se altera o tamanho da tela o texto pode ficar desorganizado. Para isso, o ideal é limitar o tamanho do elemento na tela a depender do próprio espaço disponível.</p>
                     <div style="font-size: 16px;"><code>&lt;h1&gt;Fique de olho&lt;br&gt;<br> no que importa&lt;/h1&gt;</code></div>
                     <p>Acima, o texto fica quebrado, entretanto se a tela diminuir, pode ser que o texto fique desorganizado, então, o correto é limitar o tamanho do elemento com a propriedade CSS "width".</p>
-                    <div style="font-size: 16px;">.container {<br>width: 300px; ou 50% <br>}</div>
+                    <div style="font-size: 16px;"><code>.container {<br>width: 300px; ou 50% <br>}</code></div>
                     <p><i>Obs: Ao limitar o tamanho do espaço, é possível que o alinhamento central na tela se perca, caso o texto esteja ao centro da tela com a propriedade "text-align: center", pois o texto estava alinhado ao centro considerando o tamanho total da tela (display: block), após limitar o tamanho do espaço, o texto continua alinhado, mas ao novo tamanho, que ocoupa apenas um lado da tela. Para corrigir isso, usa-se a propriedade "auto" dentro do "margin", para centralizar elementos com "display: block".</i></p>
-                    <div style="font-size: 16px;">.container {<br>display: block <br>width: 300px; <br>margin: 0 auto <br>}</div>
+                    <div style="font-size: 16px;"><code>.container {<br>display: block <br>width: 300px; <br>margin: 0 auto <br>}</code></div>
                     <p>Adapitação em tablets ou smartphones. Para que o site seja adaptado a diferentes tamanhos de telas, usa-se no CSS a propriedade "@media" (chamada de media queries), com o comando do tamanho da tela. O navegador vai entender que se a tela estiver no máximo naquele tamanho informado, executará os comandos informados no media queries.</p>
-                    <div style="font-size: 16px;">@media(max-width: 768px) {<br>body { <br>background-color: purple; <br>color: red; <br>font-size: 24px <br>} <br>}</div>
+                    <div style="font-size: 16px;"><code>@media(max-width: 768px) {<br>body { <br>background-color: purple; <br>color: red; <br>font-size: 24px <br>} <br>}</code></div>
                     
                     <h3>Aula 05 Compartilhando Projeto - Git, Github e Terminal (CMD)</h3>
                     <p>Git e Github são aplicativos para guardar o projeto desenvolvido e compartilhar, guardando também a linha do tempo de desenvolvimento. O Git é local, enquanto o Github é na nuvem.</p>
@@ -200,6 +200,10 @@
                         <li>Para correções urgentes na main: <i>hotfix/descricao-do-problema</i></li>
                     </ul>
                     <p>Para criar uma branch, no terminal do VS Code pelo Git, digita git branch para listar as branches, depois "git branch" e o nome da brancho (exmeplos acima). Para mudar entre as branches digita "git checkout" e o nome da branch.</p>
+                    <h4>Principais Comandos do Git no Terminal</h4>
+                    <img src="assets/comandos-git.PNG" alt="comandos git" width="736" height="auto">
+                    <h3>Aula 06 - Hospedagem de páginas</h3>
+                    <p></p>
 
 
 
