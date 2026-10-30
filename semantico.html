@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML semântico</title>
+</head>
+<body>
+    <header>
+        <p>O <code>&lt;header&gt;</code> é a tag usada para informar ao navegador que esse conteúdo está no cabeçalho da página.</p>
+        <p><i>Obs: o navegador não compreende os caracteres especias se forem escritos diretamente como caractere, e sim como uma tag, então, para escrever um caracetere especial é necessário informar um código, chamado de "entidade". São códigos HMTL que começam com &amp; e terminam com (;), para saber quais códigos para determinado caractere especial, melhor pesquisar no Google.</i></p>
+        <p><i>Obs II: Para escrever uma tag ou outro comando em texto, além de se usar o código de entidade para escrever o caractere especial, pode-se usar também a tag <code>&lt;code&gt;</code>, para formatar a parte do texto que tem a escrita dos códigos, como as tags.</i></p>
+        <hr>
+
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </nav>
+        <p>A tag <code>&lt;nav&gt;</code> significa navegação, é usada para indicar ao navegador que essa seção é de links de navegação, como no exemplo acima.</p>
+    </header>
+    <hr>
+    <hr>
+    <main>
+        <h1>HTML semântico e boas práticas de layout.</h1>
+        <section>
+            <h2>Seções</h2>
+            <p>Tags semânticas são tags que declaram exatamente sua função ao navegador.</p>
+            <p>Ex: <code>&lt;header&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>.</p>
+            <p>A tag <code>&lt;main&gt;</code> é onde todo o conteúdo principal da página se encontra. É aqui que são inseridas as seções, textos e demais elementos principais de navegação da página. Não é indicado colocar tags como <code>&lt;header&gt;</code> ou <code>&lt;footer&gt;</code> aqui.</p>
+            <p>Aqui usa-se tags como <code>&lt;section&gt;</code>, para indicar ao navegador que essa é uma seção.</p>
+        </section>
+        <section>
+            <div>
+                <h2>Segunda Seção</h2>
+                <p>As seções são muito usadas para separar e organizar o conteúdo dentro do <code>&lt;main&gt;</code>. Além dos textos, é possível inserir links e imagens para deixar tudo organizado.</p>
+                <a href="#">Primeiro Link da seção.</a>
+                
+            </div>
+            <article>
+                <p>A tag <code>&lt;article&gt;</code> é usada para indicar ao navegador que há uma seção de artigo, e funciona da mesma forma que a seção comum.</p>
+            </article>
+            <div>
+                <p>Tags semânticas são sempre indicadas para desenvolver o site e deixar organizado, mas é possível usar tags não semânticas para organizações também. A tag <code>&lt;div&gt;</code> é um exemplo de tag não semântica, ela é uma seção "genérica", é usada para informar ao navegador que foi separado um espaço ali, mas o navegador não sabe direito qual tipo de espaço, ao contrário da <code>&lt;section&gt;</code>, que por ser semântica, o navegador sabe exatamente que o espaço informado é para uma seção de conteúdo.</p>
+                <p>Outro exemplo de tag não semântica é <code>&lt;span&gt;</code>, usada para destacar alguma parte do texto para estilizar.</p>
+            </div>
+            <figure>
+                <p> A tag <code>&lt;figure&gt;</code> é usada para inserir imagem com um texto descritivo a baixo, em conjunto com a tag <code>&lt;figcaption&gt;</code></p>
+                <img src="assets/paisagem.jpg" alt="imagem paisagem">
+                <figcaption><i>Obs: Essa imagem de paisagem foi usada como exemplo dentro do aprendizado de desenvolvedor HTML e não deve ser entendida como uso incorreto de direitos autorais.</i></figcaption>
+            </figure>
+        </section>
+    </main>
+    <hr>
+    <hr>
+    <footer>O <code>&lt;footer&gt;</code> é usado para deixar informações adicionais da página, como informações de contatos, links de redes sociais, endereço e e-mails de contato.</footer>
+</body>
+</html>

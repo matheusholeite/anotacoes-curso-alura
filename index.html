@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- a tag meta é para metadados e é usada apenas para dizer ao navegador informações de configurações de exibição, essas informações não aparecem para o usuário. No caso, o UTF-8 é usado para informar qual o conjunto de caracteres que será usado, como caracteres especiais, para que esses caracteres apareçam corretamente no cavegador, já o viewport é para dizer ao navegador qual o tamanho da tela que será usada por padrão, no caso, foi definido que a largura padrão será a largura do dispositivo, sendo a escala inicial 1, ou seja, sem zoom. -->
+    <title>Exemplos de Tags HTML</title>
+    <!-- a tag title aparece no título do site, na aba ou no próprio navegador. -->
+     <link rel="stylesheet" href="css/principal.css">
+</head>
+<body>
+    <main>
+        <section class="primeira__secao">
+            <!-- na tag body onde são inseridos todos os conteúdos da página, que serão visíveis ao usuário. -->
+            <h1>Anotações e links de exemplos do curso da Alura</h1>
+            <hr>
+            <!-- a tag hr significa horizontal row, ou seja, é uma tag sem fechamento para adicionar uma linha de separação no HTML. -->
+            <h2>Links</h2>
+            <ul>
+                <li><a href="titulos.html" target="_blank">Acesse a página de títulos.</a></li>
+                <li>
+                    <a href="paragrafos.html" target="_blank">Acesse a página de parágrafos.</a>
+                    <ul>
+                        <li>Aula 02 do curso de HTML e CSS com explicações de uso de parágrafos e tags não semânticas.</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="imagem.html" target="_blank">Acesse a página da imagem.</a>
+                    <ul>
+                        <li>Aula 02 do curso de HTML e CSS com explicações de uso de imagens.</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="listas.html" target="_blank">Acesse a página de listas.</a>
+                    <ul>
+                        <li>Aula 02 do curso de HTML e CSS com explicações de uso de listas.</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="links.html" target="_blank">Acesse a página da links.</a>
+                    <ul>
+                        <li>Aula 02 do curso de HTML e CSS com explicações do uso de links.</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="semantico.html" target="_blank">Acesse a página de HTML semânticos e boas práticas de layout.</a>
+                    <ul>
+                        <li>Aula 03 do curso de HTML e CSS com explicações das tags semânticas.</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="projetocurso.html" target="_blank">Acesse a página do projeto do curso.</a>
+                    <ul>
+                        <li>Aula 03 e 04 do curso de HTML e CSS, contendo explicação de criação do primeiro projeto, favicon, boas práticas e CSS.</li>
+                        <li>Uso da propriedade "style" dentro do elemento HTML (inline). Uso do font-size, color, font-family e letter-spacing (espaçamento enre letras). </li>
+                        <li>Outra forma é usar a tag style dentro da tag head, como forma de alterar todo o HTML.</li>
+                        <li>Não é o ideal usar o style dentro do próprio HTML, pois pode deixar o código "bagunçado". Correto, separar o arquivo CSS. Explicação do arquivo CSS em separado (externo).</li>
+                    </ul>
+                </li>
+                <li><a href="arquives/texto curso alura.pdf" target="_blank">Minhas Anotações Curso Alura em PDF</a></li>
+            </ul>
+        </section>
+
+        <hr class="linha__entre__secao">
+
+        <p class="paragrafo__entre__secao"><i>Obs: Algumas explicações estão escritas dentro do código HTML, sempre abrir o código para ler mais do assunto.</i></p>
+
+        <hr class="linha__entre__secao">
+
+        <section class="segunda__secao">
+            <h2>Anotações</h2>
+
+                <h3>Configurando o ambiente e criando o primeiro site. Aulas 02, 03 e 04.</h3>
+
+                    <p>IDE - ambiente para escrever os códigos, como o VS Code.</p>
+                    <p>O VS Code possui extensões e uma delas é o português Brasil.</p>
+                    <p>É possível alterar o tamanho da fonte e modificar como salvar automaticamente.</p>
+                    <p>Pode-se configurar para quebrar a linha automaticamente (ou apertar Alt + z, para quebrar manualmente).</p>
+                    <p>Todo navegador tem as Devtools, ferramentas de desenvolvimento, para visualizar os códigos HTML e CSS dos sites. Com essa ferramenta, além de visualizar, é possível interagir e modificar o site. É possível alterar as dimensões para diferentes dispositivos e visualizar o comportamento da página para diferentes dispositivos.</p>
+                    <p>O atalho para gerar a estrutura padrão do HTML é “!”, no VS Code</p>
+                    <p>Para inserir múltiplas tags no VS Code usa-se o asterísco (*), exemplo, p*5, seriam adicionados cinco parágrafos. Para adicionar as tags de parágrafos em um texto já pronto, usa-se o comando "Ctrl+Shift+P", na barra de busca digita-se "Emmet: Wrap with abbreviation", selecionando o texto que deseja inserir as tags de parágrafo, e digita-se "p*", para adicionar um parágrafo para cada linha do texto já feito.</p>
+                    <p>Estrutura padrão:</p>
+                    <div style="font-size: 16px;">
+                        <code>&lt;!DOCTYPE html&gt;</code><br>
+                        <code>&lt;html lang="en"&gt;</code><br>
+                        <code>&lt;head&gt;</code><br>
+                        <code>&lt;meta charset="UTF-8"&gt;</code><br>
+                        <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code><br>
+                        <code>&lt;title&gt;</code>Document<code>&lt;/title&gt;</code><br>
+                        <code>&lt;/head&gt;</code><br>
+                        <code>&lt;body&gt;</code><br>
+                        <code>&lt;/body&gt;</code><br>
+                        <code>&lt;/html&gt;</code>
+                    </div>
+                    <p>O HTML é uma linguagem que significa marcação de textos, logo, o uso de “Tags” (etiquetas) são usadas para marcar os textos ou comandos, com a finalidade de dizer ao navegador o que significa cada parte. Para indicar, usa-se tags de abertura e encerramento.</p>
+                    <p>Live server serve para agilizar o desenvolvimento da página, ao gerar um host local do site e atualizá-lo automaticamente no navegador, sem a necessidade de ficar atualizando a página manualmente a cada modificação do código.</p>
+                    <p>Tag semântica e não semântica. A tag semântica é aquela que quer dizer exatamente seu propósito, serve para o navegador identificar exatamente o que o desenvolvedor quis com aquela tag; já a não semântica é uma tag sem propósito específico, embora o navegador entenda, ela não a indica com aquele propósito, para buscadores, por exemplo.</p>
+                    <p>A tag meta é para metadados e é usada apenas para dizer ao navegador informações de configurações de exibição, essas informações não aparecem para o usuário. No caso, o UTF-8 é usado para informar qual o conjunto de caracteres que será usado, como caracteres especiais, para que esses caracteres apareçam corretamente no cavegador, já o viewport é para dizer ao navegador qual o tamanho da tela que será usada por padrão, no caso, foi definido que a largura padrão será a largura do dispositivo, sendo a escala inicial 1, ou seja, sem zoom.
+                    <p>A tag title aparece no título do site, na aba ou no próprio navegador.</p>
+                    <p>Na tag body onde são inseridos todos os conteúdos da página, que serão visíveis ao usuário.</p>
+                    <p>A tag hr significa horizontal row, ou seja, é uma tag sem fechamento para adicionar uma linha de separação no HTML.</p>
+                    <p>Manipulando imagem HTML - o tamanho da imagem é relevante para inclusão no site, até mesmo uma imagem de 1mb pode ser considerada grande. O ideal é sempre diminuir a qualidade e tamanho da imagem para inserir no site para carregamento rápido. Um aplicativo que pode ajudar nessa parte é o GIMP, aplicativo e edição de imagem gratuita. Pode-se usar o site tinypng.com para diminuir o tamanho da imagem também. Para computadores, o tamanho ideal é de até 1900px, para tablets é 720px e celulares, 480px.</p>
+                    <p>Lista ordenada. Usada para inserir uma lista como receita, por exemplo. Usada com a tag “ol” e “li”.</p>
+                    <p>Para adicionar um favicon, usa-se a tag "link". Nela, coloca-se a propriedade "rel" para indicar qual o relacionamento. No caso do favicon, usa-se "icon". E, por fim, indica-se a localização do ícone com "href". Por boa prática de desenvolvimento, o ocrreto é deixar o favicon dentro da pasta raiz (junto com o index). Além disso, deve-se usar a propriedade "type" para indicar o tipo de imagem para o navegador.</p>
+                    <p>Para puxar a folha de estilo, usa-se a tag link, usando o relacionamento com stylesheet e o caminho.</p>
+                    <p>Para adicionar a fonte localmente (baixado do Google), basta pegar o arquivo da fonte e colocar dentro da pasta do projeto (seja na raiz ou em pasta). Neste caso, a forma de "linkar" o arquivo com o projeto é pelo CSS, com o comando @font-face, indicar o nome da fonte e sua url (para sair de uma pasta e voltar para a raiz usa-se ../). Ao indicar o peso da fonte aqui, não é necessário indicar o peso da fonte diretamente no elemento.</p>
+                    <p>O comando font-display: swap é usado para informar ao navegador que se houver atraso no carregamento da fonte, é para usar a segunda opção de fonte e depois voltar para fonte principal, após o carregamento completo.</p>
+                    <p>O margin e padding podem ser incluídos e forma global no CSS, para ser aplicado a todos os elementos. Para isso, usa-se o asterísco. É bom resetar a configuração de todo navegador colocando esse primeiro código no CSS.</p>
+                    <p>O navegador vai entender o comando de cores em nome, hexadecimal e rgb.</p>
+                    <p>Pode-se aplicar a configuração a todos os elementos dentro do body, como a cor das letras, ou pode-se aplicar diretamente em cada elemento, apenas os separando por vírgulas.</p>
+                    <p>A melhor forma e a correta é aplicar classes aos elementos, para facilicar a estilização de cada um deles.</p>
+                    <p>Fontes. serif ou fonte serifada é aquela que possui uma decoração na escrita, como prolongamento dos traços nos cantos da letra. As sans-serif é mais reta s sólida, não possui decorações. Existem outras opções, como monospace, cursive ou fantasy.</p>
+                    <p>Caso o projeto tenha o tamanho de fonte em pt, deve-se converter para px, que é o formato mais usado. No caso, 1 pt representa 1,333 px.</p>
+                    <p>A tag span foi usada apenas para destacar parte do texto, para configurar aquela parte especificamente.</p>
+                    <p>Uma forma boa de aplicar estilo em elementos iguais é usar a hierarquia, no exemplo foi usado o h1 espaço span, para indicar ao navegador que o estilo deve ser aplicado ao span dentro do h1.</p>
+                    <p>Configurações padrão. Todo elemento no HTML tem configurações de visualização (display)padronizadas aplicadas pelos navegadores, alguns elementos possuem configurações de display em "block", que ocupa o espaço máximo de largura disponível na tela (ex: parágrafo), outros elementos possuem configurações de display "inline", que ocupa somente o espaço dele mesmo, se posicionando, quando for possível, ao lado de outros elementos na tela (ex: links &lt;a&gt;, ou imagens).</p>
+                    <p>Após usar o "display: block", o elemento ocupará toda a extensão da largura da tela, se a ideia é diminuir ou limitar esse espaço usado, deve-se usar o comando "width", e informar ao navegador que aquele elemento, embora estja em "block", vai usar somente um espaço limitado da largura, por exemplo, usar valor em px para limitar o espaço da largura (display: block; width: 200px).</p>
+                    <p>Line-height. Essa propriedade no CSS é usada para definir o tamanho (altura) de uma linha. Por padrão, a linha tem a mesma altura da fonte, se a fonte tem 24px, o tamanho ou altura da linha ficará em 24px. Como o texto sempre fica centralizado verticalmente com o tamanho da linha, se definirmos o line-height acima do tamanho da fonte, o texto centralizará automaticamente ao novo tamanho. Essa técnica pode ser usada para centralizar um texto verticalmente dentro de um botão.</p>
+                    <p>Box-model. Todos os elementos ficam dentro da caixa, que é formada pela margem, borda, espaçamento e conteúdo.</p>
+                    <p>Com isso, é possível usar as propriedade de "margin" e "padding" para organizar o elemento onde fica melhor na tela. É possível lançar valores fixos como px ou relatívos como porcentagem. Ao lançar os valores, pode-se lançar individualmente para cada lado (ex: margin: 10px 10px 10px 10px), somente para cima/baixo ou esquerda/direita (ex: 10px 10px), ou para todos os lados ao mesmo tempos (margin: 10px). Uma forma fácil de indicar ao navegador que a margem tem que se adapatar a cada tamanho de tela é o valor "auto". Nesse caso, o navegador automaticamente adicionará ou removerá margem, calculando o tamanho da tela, centralizando o elemento em block na tela (margin: auto).</p>
+                    <div style="font-size: 16px;">
+                        <code>a {<br>
+                            display: block;<br>
+                            width: 340px;<br>
+                            height: 66px;<br>
+                            text-align: center;<br>
+                            border-radius: 36px;<br>
+                            line-height: 66px;<br>
+                            margin: auto;<br>
+                        }</code>
+                    </div>
+                    <p>Sobre ajuste de imagem, pode-se usar a propriedade "max-width: 100%" e "height: auto" para indicar ao navegador que a imagem deverá reajustar de acordo com o tamanho da tela.</p>
+                    <div style="font-size: 16px;">
+                        <code>section img {<br>
+                            display: block;<br>
+                            margin: 0 auto;<br>
+                            max-width: 100%;<br>
+                            height: auto;<br>
+                        }</code>
+                    </div>
+                    <p>A tag "br" serve para quebrar linhas de um parágrafo, é usada para textos pequenos, poemas ou informações de endereço no rodapé, no entanto não é aconselhável usar essa estratégia para telas responsivas, pois o que é codificado no HTML é fixo, e quando se altera o tamanho da tela o texto pode ficar desorganizado. Para isso, o ideal é limitar o tamanho do elemento na tela a depender do próprio espaço disponível.</p>
+                    <div style="font-size: 16px;"><code>&lt;h1&gt;Fique de olho&lt;br&gt;<br> no que importa&lt;/h1&gt;</code></div>
+                    <p>Acima, o texto fica quebrado, entretanto se a tela diminuir, pode ser que o texto fique desorganizado, então, o correto é limitar o tamanho do elemento com a propriedade CSS "width".</p>
+                    <div style="font-size: 16px;">.container {<br>width: 300px; ou 50% <br>}</div>
+                    <p><i>Obs: Ao limitar o tamanho do espaço, é possível que o alinhamento central na tela se perca, caso o texto esteja ao centro da tela com a propriedade "text-align: center", pois o texto estava alinhado ao centro considerando o tamanho total da tela (display: block), após limitar o tamanho do espaço, o texto continua alinhado, mas ao novo tamanho, que ocoupa apenas um lado da tela. Para corrigir isso, usa-se a propriedade "auto" dentro do "margin", para centralizar elementos com "display: block".</i></p>
+                    <div style="font-size: 16px;">.container {<br>display: block <br>width: 300px; <br>margin: 0 auto <br>}</div>
+                    <p>Adapitação em tablets ou smartphones. Para que o site seja adaptado a diferentes tamanhos de telas, usa-se no CSS a propriedade "@media" (chamada de media queries), com o comando do tamanho da tela. O navegador vai entender que se a tela estiver no máximo naquele tamanho informado, executará os comandos informados no media queries.</p>
+                    <div style="font-size: 16px;">@media(max-width: 768px) {<br>body { <br>background-color: purple; <br>color: red; <br>font-size: 24px <br>} <br>}</div>
+                    
+                    <h3>Aula 05 Compartilhando Projeto - Git, Github e Terminal (CMD)</h3>
+                    <p>Git e Github são aplicativos para guardar o projeto desenvolvido e compartilhar, guardando também a linha do tempo de desenvolvimento. O Git é local, enquanto o Github é na nuvem.</p>
+                    <p>Terminal (cmd). Para abrir o terminal no VS Code, basta selecionar nas opções acima. Alguns comandos:</p>
+                    <ul>
+                        <li>pwd - mostra o local da pasta</li>
+                        <li>ls (mac/linux) ou dir (win) - mostra os arquivos que a pasta selecionada tem</li>
+                        <li>cd (+nome da pasta) - navegar para outra pasta dentro do diretório</li>
+                        <li>cd .. - voltar uma pasta</li>
+                        <li>mkdir - cria uma pasta nova dentro do diretório</li>
+                        <li>clear - limpa o terminal</li>
+                    </ul>
+                    <p>Após baixar o aplicativo Git, deve-se conectá-lo ao VS Code, e isso é feito pelo Terminal.</p>
+                    <ol>
+                        <li>Configurando o nome de usuário: git config --global user.name "NomeUsuário"</li>
+                        <li>Configurando e-mail do usuário - git config --global user.email "emailusuário"
+                            <ul>
+                                <li>Para verificar se as aplicações forem bem sucedidas: git config --list</li>
+                            </ul>
+                        </li>
+                        <li>Navegar até a pasta do projeto: cd pastaprojeto</li>
+                        <li>Dentro da pasta, iniciar o git: git init</li>
+                        <li>Adicionar os arquivos ao git (pode-se adicionar um por vez ou todos de uma vez): git add .
+                            <ul>
+                                <li>Após adicionar os arquivos, pode-se ver o status: git status</li>
+                            </ul>
+                        </li>
+                        <li>Após realizar uma modificação, deve-se informar o "commit" (comprometimento), ou seja, adicionar ao histórico: git commit -m "informação da alteração"
+                            <ul>
+                                <li>Para visualizar o histórico de "commit": git log</li>
+                                <li>Para visualizar as branches: git branch</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>É possível usar o próprio VS Code para realizar os "commits" sem a necessidade de usar o terminal, pelo menu à esquerda "controle do código-fonte" (abaixo da lupa). Nele, é possível visualizar arquivos que foram alterados e pedir para dicioná-los a pasta git com os "commits".</p>
+                    <p>O VS Code e Git ainda podem sincronizar com o Github, para isso, deve-se criar o reposiório no Github.</p>
+                    <ol>
+                        <li>Criar repositório no Github</li>
+                        <li>Acessar o terminal do VS Code e inserir o comando: git remote add origin "url do repositório"</li>
+                        <li>Em seguida criar o "main branch" (se o main branch já tiver sido criado na pasta local, não é necessário essa etapa): git branch -M main</li>
+                        <li>Com alterações no projeto feitas, só enviar ao Github: git push -u origin main</li>
+                    </ol>
+                    <ul>
+                        <li>Em caso de perda da pasta, usa-se o comando no terminal para baixar o backup: git clone url do repositório</li>
+                        <li>Caso a alteração tenha sido feita direto no Github, para baixar a atualização, usa-se o comando: git pull</li>
+                    </ul>
+                    <p>Branches dentro de um repositório: Branches são ramificações dentros do repositório, dentro deste tem a branch "main", principal, que possivelmente está em produção, e para realizar alterações e proteger o código antes de colocar em produção é necessário criar branches.</p>
+                    <p>Descrição da branch:</p>
+                    <ul>
+                        <li>Para modificações e novas funcionalidade: <i>feat ou feature/descricao-da-funcionalidade/modificacao</i></li>
+                        <li>Para correção de erro/problema: <i>fix ou bugfix/descricao-do-problema</i></li>
+                        <li>Para correções urgentes na main: <i>hotfix/descricao-do-problema</i></li>
+                    </ul>
+                    <p>Para criar uma branch, no terminal do VS Code pelo Git, digita git branch para listar as branches, depois "git branch" e o nome da brancho (exmeplos acima). Para mudar entre as branches digita "git checkout" e o nome da branch.</p>
+
+
+
+
+        </section>
+    </main>
+</body>
+</html>

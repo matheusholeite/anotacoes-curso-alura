@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Unbounded";
+    src: url("../fonts/Unbounded-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+/* Para adicionar a fonte localmente (baixado do Google), basta pegar o arquivo da fonte e colocar dentro da pasta do projeto (seja na raiz ou em pasta). Neste caso, a forma de "linkar" o arquivo com o projeto é pelo CSS, com o comando @font-face, indicar o nome da fonte e sua url (para sair de uma pasta e voltar para a raiz usa-se ../). Ao indicar o peso da fonte aqui, não é necessário indicar o peso da fonte diretamente no elemento. */
+/* O comando font-display: swap é usado para informar ao navegador que se houver atraso no carregamento da fonte, é para usar a segunda opção de fonte e depois voltar para fonte principal, após o carregamento completo. */
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PoppinsSemiBold";
+    src: url(../fonts/Poppins-SemiBold.ttf);;
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* O margin e padding podem ser incluídos e forma global no CSS, para ser aplicado a todos os elementos. Para isso, usa-se o asterísco. É bom resetar a configuração de todo navegador colocando esse primeiro código no CSS. */
+
+
+/* Início do estilo desktop */
+body {
+    background-color: #0E1014;
+    color: #F5F5F5;
+    font-family: "Unbounded", sans-serif;
+}
+/* O navegador vai entender o comando de cores em nome, hexadecimal e rgb. */
+/* Pode-se aplicar a configuração a todos os elementos dentro do body, como a cor das letras, ou pode-se aplicar diretamente em cada elemento, apenas os separando por vírgulas. */
+/* A melhor forma e a correta é aplicar classes aos elementos, para facilicar a estilização de cada um deles. */
+/* Fontes. serif ou fonte serifada é aquela que possui uma decoração na escrita, como prolongamento dos traços nos cantos da letra. As sans-serif é mais reta s sólida, não possui decorações. Existem outras opções, como monospace, cursive ou fantasy. */
+
+header img {
+    display: block;
+    margin: 75px 0 0 360px;
+}
+
+
+section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    margin-top: 60px;
+    margin-bottom: 24px;
+}
+/* Caso o projeto tenha o tamanho de fonte em pt, deve-se converter para px, que é o formato mais usado. No caso, 1 pt representa 1,333 px. */
+
+h1 span {
+    color: #9747FF;
+}
+/* A tag span foi usada apenas para destacar parte do texto, para configurar aquela parte especificamente. */
+/* Uma forma boa de aplicar estilo em elementos iguais é usar a hierarquia, no exemplo foi usado o h1 espaço span, para indicar ao navegador que o estilo deve ser aplicado ao span dentro do h1. */
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    width: 792px;
+    margin: 0 auto;
+}
+
+a {
+    color: #F5F5F5;
+    font-family: "PoppinsSemiBold", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    text-align: center;
+    border-radius: 36px;
+    line-height: 66px;
+    margin: 40px auto;
+}
+
+a:hover {
+    background-color: #8233E8;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Incício do estilo Tablet */
+@media(max-width: 768px){
+    
+    header img {
+        margin: 65px 0 0 60px;
+    }
+
+    p {
+        width: 648px;
+    }
+
+
+}
+
+/* Início do estilo Smartphone */
+@media(max-width: 376px){
+
+    header img {
+        margin: 32px 0 0 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+        width: 341px;
+        margin: 60px auto 24px auto;
+    }
+
+    p {
+        font-size: 20px;
+        width: 341px;
+    }
+
+    a {
+        font-size: 20px;
+        width: 251px;
+    }
+
+    section img {
+        width: 341px;
+        height: auto;
+    }
+
+}
